@@ -4,6 +4,7 @@
   --accent-blue: #3A86FF;
   --dark: #243447;
   --white: #FFFFFF;
+  --grey: #999595; 
 }
 
 /* GENERAL */
@@ -146,8 +147,8 @@ body {
 }
 
 .polaroid:hover {
-  transform: rotate(0deg) scale(1.08);
-  box-shadow: 14px 14px 0px var(--yellow);
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 0px var(--grey);
 }
 
 .polaroid::before {
