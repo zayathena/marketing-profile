@@ -53,10 +53,6 @@ body {
   justify-content: center;
 }
 
-.section + .section {
-  margin-top: 60px;
-}
-
 /* ABOUT */
 .about {
   background: var(--yellow);
