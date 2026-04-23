@@ -109,20 +109,37 @@ body {
 /* POLAROIDS */
 .polaroid-container {
   display: flex;
-  gap: 30px;
-  margin-top: 40px;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .polaroid {
-  width: 200px;
-  height: 220px;
+  width: 220px;
+  min-height: 260px;
   background: white;
-  padding: 10px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  border: 2px solid var(--dark);
+  box-shadow: 6px 6px 0px var(--yellow);
+  padding: 15px;
   transform: rotate(-2deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.polaroid-content h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.polaroid-content p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 10px 10px 0px var(--accent-blue);
 }
 
 /* SKILLS */
