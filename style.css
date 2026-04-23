@@ -142,6 +142,30 @@ body {
   box-shadow: 10px 10px 0px var(--accent-blue);
 }
 
+.polaroid::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 60px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.polaroid:nth-child(2)::before {
+  transform: translateX(-50%) rotate(3deg);
+  width: 55px;
+}
+
+.polaroid:nth-child(3)::before {
+  transform: translateX(-50%) rotate(-5deg);
+  width: 65px;
+}
+
 /* SKILLS */
 .skills {
   background: var(--blue);
