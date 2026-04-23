@@ -110,17 +110,16 @@ body {
 
 /* WORK */
 .work {
-   background: var(--accent-blue);
+  background: var(--accent-blue);
+  padding: 120px 40px;
 }
 
 /* POLAROIDS */
 .polaroid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  width: 100%;
-  max-width: 1200px;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .polaroid {
@@ -136,6 +135,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: center;
   text-align: center;
 }
 
