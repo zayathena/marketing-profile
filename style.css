@@ -2,7 +2,7 @@
   --yellow: #FFF2B2;
   --blue: #A7D8FF;
   --accent-blue: #3A86FF;
-  --dark: #1F2933;
+  --dark: #243447;
   --white: #FFFFFF;
 }
 
@@ -16,29 +16,37 @@ body {
 /* NAV */
 .nav {
   position: fixed;
-  top: 10px;
-  right: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  z-index: 1000;
+  border: 2px solid var(--dark);
 }
 
 .nav a {
   background: var(--blue);
-  padding: 10px 15px;
-  margin: 5px;
+  padding: 12px 20px;
+  margin: 0 10px;
   text-decoration: none;
   color: var(--dark);
   display: inline-block;
-  border-radius: 6px;
   font-weight: bold;
-  transition: transform 0.2s;
+  border-radius: 0; /* sharp edges */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .nav a:hover {
   transform: translateY(-3px);
+  box-shadow: 4px 4px 0px var(--accent-blue);
 }
 
 /* SECTIONS */
 .section {
-  padding: 120px 40px;
+  padding: 140px 40px 100px;
   min-height: 100vh;
 }
 
