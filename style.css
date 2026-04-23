@@ -19,34 +19,38 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--yellow);
   display: flex;
-  justify-content: center;
-  padding: 15px 0;
+  background: var(--yellow);
+  border-bottom: 3px solid var(--accent-blue);
   z-index: 1000;
 }
 
 .nav a {
-  background: var(--blue);
-  padding: 12px 20px;
-  margin: 0 10px;
+  flex: 1;
+  text-align: center;
+  padding: 18px 0;
   text-decoration: none;
   color: var(--dark);
-  display: inline-block;
+  background: var(--blue);
   font-weight: bold;
-  border-radius: 0; /* sharp edges */
-  transition: transform 0.2s, box-shadow 0.2s;
-  border: 2px solid var(--dark);
+  border-right: 2px solid var(--dark);
+  border-radius: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.nav a:last-child {
+  border-right: none;
 }
 
 .nav a:hover {
-  transform: translateY(-3px);
-  box-shadow: 4px 4px 0px var(--accent-blue);
+  background: var(--accent-blue);
+  color: white;
+  transform: translateY(2px);
 }
 
 /* SECTIONS */
 .section {
-  padding: 140px 40px 100px;
+  padding: 160px 40px 100px;
   min-height: 100vh;
 }
 
