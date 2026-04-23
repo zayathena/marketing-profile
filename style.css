@@ -88,9 +88,8 @@ body {
 }
 
 .quick-links a:hover {
-  transform: translateY(-2px);
-  background: var(--accent-blue);
-  color: white;
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 0px var(--accent-blue);
 }
 
 /* RIPPED PAPER EFFECT */
